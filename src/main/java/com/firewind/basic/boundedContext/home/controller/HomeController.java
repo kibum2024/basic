@@ -1,4 +1,4 @@
-package com.firewind.basic;
+package com.firewind.basic.boundedContext.home.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,14 +6,10 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 
 @Controller
 public class HomeController {
