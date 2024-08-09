@@ -1,9 +1,11 @@
 package com.firewind.basic.boundedContext.home.controller;
 
+import com.firewind.basic.boundedContext.member.service.MemberService;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,6 +17,10 @@ import java.util.List;
 public class HomeController {
     private int count;
     private List<Person> people;
+
+    //필드 주입
+    @Autowired
+    private final MemberService memberService;
 
     public HomeController() {
         count = -1;
